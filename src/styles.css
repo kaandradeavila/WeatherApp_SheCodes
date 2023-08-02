@@ -1,0 +1,39 @@
+h1 {
+  color: blue;
+}
+
+h6 {
+  text-align: center;
+  color: gray;
+}
+.container {
+  margin: 10px;
+}
+
+.d-flex {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card-title,
+.card-subtitle {
+  text-align: center;
+}
+
+.city-emoji {
+  font-size: 71px;
+  text-align: center;
+}
+
+.card-emoji {
+  font-size: 30px;
+  text-align: center;
+}
+li {
+  text-align: center;
+}
+
+.unit-change:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

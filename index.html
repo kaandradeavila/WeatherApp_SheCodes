@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-sm">
+      <form class="d-flex" id="city-search-form">
+        <input
+          type="search"
+          class="form-control me-2"
+          id="city-search-input"
+          placeholder="Search city..."
+        />
+        <input
+          type="submit"
+          class="btn btn-outline-success"
+          id="city-search-button"
+          value="Search"
+        />
+      </form>
+      <div class="row">
+        <div class="col-sm-6 mb-sm-0">
+          <div class="card border-primary city-weather">
+            <div class="card-body">
+              <h2 class="card-title" id="city-display">Montpelier</h2>
+              <h4 class="card-subtitle mb-2">
+                <span id="temp-display">85</span>
+                <span id="temp-unit">°F</span>
+                <span>/</span>
+                <span class="unit-change" style="color: gray" id="unit-change"
+                  >°C</span
+                >
+              </h4>
+
+              <div class="city-emoji">☀️</div>
+              <ul class="list-group list-group-flush card-list">
+                <li class="list-group-item card-weather">Sunny</li>
+                <li class="list-group-item" id="current-day-time">
+                  Tuesday 13:48 PM
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card border-primary other-info-weather py-2">
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item card-feels-like">Feels like: 84°</li>
+                <li class="list-group-item card-precipitation">
+                  Precipitation: 0%
+                </li>
+                <li class="list-group-item card-humidity">Humidity: 51%</li>
+                <li class="list-group-item card-wind">Wind: 5mph</li>
+                <li class="list-group-item card-pressure">
+                  Pressure: 30.08 inHg
+                </li>
+                <li class="list-group-item card-pressure">Sunset: 20:35</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12">
+          <div class="card border-primary my-3 mb-3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-2">
+                  <h5 class="card-title">Wed</h5>
+                  <div class="card-emoji">⛅</div>
+                  <h6 class="card-subtitle mb-2 text-muted">41 °F</h6>
+                </div>
+                <div class="col-2">
+                  <h5 class="card-title">Thr</h5>
+                  <div class="card-emoji">🌧️</div>
+                  <h6 class="card-subtitle mb-2 text-muted">45 °F</h6>
+                </div>
+                <div class="col-2">
+                  <h5 class="card-title">Fri</h5>
+                  <div class="card-emoji">⛅</div>
+                  <h6 class="card-subtitle mb-2 text-muted">48 °F</h6>
+                </div>
+                <div class="col-2">
+                  <h5 class="card-title">Sat</h5>
+                  <div class="card-emoji">⛅</div>
+                  <h6 class="card-subtitle mb-2 text-muted">43 °F</h6>
+                </div>
+                <div class="col-2">
+                  <h5 class="card-title">Sun</h5>
+                  <div class="card-emoji">⛅</div>
+                  <h6 class="card-subtitle mb-2 text-muted">39 °F</h6>
+                </div>
+                <div class="col-2">
+                  <h5 class="card-title">Mon</h5>
+                  <div class="card-emoji">⛅</div>
+                  <h6 class="card-subtitle mb-2 text-muted">42 °F</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="src/index.js"></script>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
